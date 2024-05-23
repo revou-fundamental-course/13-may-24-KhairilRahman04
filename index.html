@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Segitiga</title>
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+<div class="container">
+  <div class="navbar">
+    <div class="nav-item" onclick="showSection('luas')">Luas Segitiga</div>
+    <div class="nav-item" onclick="showSection('keliling')">Keliling Segitiga</div>
+  </div>
+  <div class="intro">
+    <h1>Welcome to Katik</h1>
+    <p>Hai sobat, selamat datang di Katik!</p>
+  </div>
+  <div class="content" id="luas-segitiga">
+    <h1>Luas Segitiga</h1>
+    <img src="./aset/luaskeliling.jpg" alt="LuasKeliling" class="luaskeliling">
+    <div class="rumus">
+      <div>Rumus Luas Segitiga:</div>
+      <span>L = Luas</span>
+      <span>a = Panjang Alas</span>
+      <span>t = Tinggi</span>
+      <div>L = 1/2 * a * t</div>
+    </div>
+    <form class="hitung" onsubmit="hitungLuas(event)">
+      <h2 class="header">Hitung Luas Segitiga</h2>
+      <label for="alas">Alas:</label>
+      <input type="number" id="alas" placeholder="Masukkan panjang alas" required>
+      <label for="tinggi">Tinggi:</label>
+      <input type="number" id="tinggi" placeholder="Masukkan tinggi" required>
+      <button type="submit">Hitung</button>
+    </form>
+    <div class="hasil" id="hasil-luas"></div>
+  </div>
+  <div class="content" id="keliling-segitiga" style="display: none;">
+    <h1>Keliling Segitiga</h1>
+    <img src="./aset/luaskeliling.jpg" alt="LuasKeliling" class="luaskeliling">
+    <div class="rumus">
+      <div>Rumus Keliling Segitiga:</div>
+      <span>K = Keliling</span>
+      <span>a, b, c = Panjang Sisi-Sisi Segitiga</span>
+      <div>K = a + b + c</div>
+    </div>
+    <form class="hitung" onsubmit="hitungKeliling(event)">
+      <h2 class="header">Hitung Keliling Segitiga</h2>
+      <label for="sisi-a">Sisi a:</label>
+      <input type="number" id="sisi-a" placeholder="Masukkan panjang sisi a" required>
+      <label for="sisi-b">Sisi b:</label>
+      <input type="number" id="sisi-b" placeholder="Masukkan panjang sisi b" required>
+      <label for="sisi-c">Sisi c:</label>
+      <input type="number" id="sisi-c" placeholder="Masukkan panjang sisi c" required>
+      <button type="submit">Hitung</button>
+    </form>
+    <div class="hasil" id="hasil-keliling"></div>
+  </div>
+</div>
+<script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.luaskeliling {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.rumus {
+  margin: 20px 0;
+}
+
+.rumus div,
+.rumus span {
+  display: block;
+  font-size: 18px;
+}
+
+.hitung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hitung label {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.hitung input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.hitung button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hitung button:hover {
+  background-color: #218838;
+}
+
+.hasil {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
